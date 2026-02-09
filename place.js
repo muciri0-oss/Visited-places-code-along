@@ -14,3 +14,6 @@ PlaceList.prototype.addPlace = function(place) {
 PlaceList.prototype.getPlace = function(index) {
   return this.places[index];
 };
+Place.prototype.getDetails = function() {
+  return `Location: ${this.location}, Landmarks: ${this.landmarks}, Time of Year: ${this.timeOfYear}, Notes: ${this.notes}`;
+};
