@@ -1,37 +1,15 @@
-Describe: Place
+# Places You've Been - Tests
 
-Test: It should create a Place object with location, landmarks, timeOfYear, and notes
-Code:
-const place = new Place("Nairobi", "National Park", "Summer", "Amazing views");
-Expected Output:
-place.location === "Nairobi"
-place.landmarks === "National Park"
-place.timeOfYear === "Summer"
-place.notes === "Amazing views"
+## Test Place Constructor
+- Create a new Place
+- Check that all properties (location, landmarks, timeOfYear, notes) are set correctly
+- Check that getDetails() returns correct string
 
-Describe: PlaceList
+## Test PlaceList
+- Create a new PlaceList
+- Add Place objects to it using addPlace()
+- Check that getPlace(index) returns the correct Place object
 
-Test: It should store Place objects in a list
-Code:
-const list = new PlaceList();
-const place1 = new Place("Nairobi", "Park", "Summer", "Nice views");
-list.addPlace(place1);
-Expected Output:
-list.places[0] === place1
-Describe: Place
-
-Test: It should return all details as a string
-Code:
-const place = new Place("Nairobi", "Park", "Summer", "Nice views");
-Expected Output:
-place.getDetails() === "Location: Nairobi, Landmarks: Park, Time of Year: Summer, Notes: Nice views"
-
-Describe: PlaceList
-
-Test: It should retrieve a Place by index
-Code:
-const list = new PlaceList();
-const place1 = new Place("Nairobi", "Park", "Summer", "Nice views");
-list.addPlace(place1);
-Expected Output:
-list.getPlace(0) === place1
+## Test UI
+- Ensure all places in PlaceList appear in the <ul> list
+- Clicking on a place shows its details in the <div>
