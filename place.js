@@ -11,3 +11,6 @@ function PlaceList() {
 PlaceList.prototype.addPlace = function(place) {
   this.places.push(place);
 };
+PlaceList.prototype.getPlace = function(index) {
+  return this.places[index];
+};
